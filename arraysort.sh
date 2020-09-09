@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash
 echo "Welcome to Sorting Arithmetic Computation Problem "
 declare -A result
 read -p "Enter first input " a
@@ -13,4 +13,13 @@ result[2]="$compute2"
 result[3]="$compute3"
 result[4]="$compute4"
 
-echo ${result[@]}
+echo "Dictionary :  ${result[@]}"
+echo "Array : "
+for i in ${!result[@]}
+do
+	arr[i]=${result[$i]}
+	echo -n "${arr[i]} "
+done
+
+
+
